@@ -1,3 +1,5 @@
 git init
 git config user.name "Edgar Vara Meza"
 git config user.email "evm_daredevil@hotmail.com"
+git add Plugin_raster
+git commit -m "base plugin raster"

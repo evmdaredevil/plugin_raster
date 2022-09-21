@@ -32,7 +32,7 @@
     <property name="title">
      <string>Datos de entrada</string>
     </property>
-    <widget class="QComboBox" name="comboBox">
+    <widget class="QComboBox" name="cmb1">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -67,7 +67,7 @@
       <string>Selecciona el archivo </string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="btn1">
      <property name="geometry">
       <rect>
        <x>250</x>
@@ -99,7 +99,7 @@
       <string>Sistema de referencia geoespacial</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_3">
+    <widget class="QLabel" name="lb1">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -116,6 +116,45 @@
      </property>
      <property name="text">
       <string>SRG</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>150</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ayuda</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn3">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>150</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Empezar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn4">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>150</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cerrar</string>
      </property>
     </widget>
    </widget>
