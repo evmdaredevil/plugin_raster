@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GestorCONABIO</class>
+ <widget class="QMainWindow" name="GestorCONABIO">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>903</width>
+    <height>730</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gestor CONABIO</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>90</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Ejemplares</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Biodiversidad</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Topografía</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Hidrología</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Edafología</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Climatología</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Vegetación y uso de suelo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>División Política</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Población</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Infraestructura</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Regionalización</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Productos satelitales</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Riesgo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Producción</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>50</y>
+      <width>161</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Seleccione la temática</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>50</y>
+      <width>161</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Seleccione la categoría</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>90</y>
+      <width>256</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Terrestre</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Marino</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Información general</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QListWidget" name="listWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>90</y>
+      <width>256</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Geomorfología marina</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mapa de Batimetría</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pleamar en el municipio de Benito Juarez</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Red Hidrográfica</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>50</y>
+      <width>161</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Seleccione la capa</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>330</y>
+      <width>331</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>¿Desea realizar un ajuste a la capa?</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>370</y>
+      <width>110</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Estatal</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_2">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>370</y>
+      <width>110</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Municipal</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>410</y>
+      <width>211</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Aguascalientes</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Baja California</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Baja California Sur</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Campeche</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Chiapas</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QListWidget" name="listWidget_5">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>410</y>
+      <width>211</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Aguas calientes</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Asientos</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Calvillo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cosío</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Jesús María</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>330</y>
+      <width>191</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>¿Qué desea descargar?</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>370</y>
+      <width>181</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Google Earth KML</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_2">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>400</y>
+      <width>161</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SHP Lambert</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_3">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>430</y>
+      <width>161</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SHP Geográficas</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_4">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>460</y>
+      <width>161</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Metadatos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>560</y>
+      <width>121</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ejecutar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>560</y>
+      <width>121</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cancelar</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>903</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

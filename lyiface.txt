@@ -1,0 +1,4 @@
+ly = iface.activeLayer()
+ly.name()
+
+ry = e14a38 = QgsRasterLayer=("C:\PASIG-II\recursos\e14a38_utm.tif","Villa del Carbón")

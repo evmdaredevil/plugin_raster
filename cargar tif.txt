@@ -1,0 +1,40 @@
+agregar tif a proyecto
+
+rlayer = QgsRasterLayer("C:\PASIG-II\mde\OUTPUT.tif", "DEM")
+QgsProject.instance().addMapLayer(rlayer,False)
+	<QgsRasterLayer: 'DEM' (gdal)>
+layerTree = iface.layerTreeCanvasBridge().rootGroup()
+layerTree.insertChildNode(-1,QgsLayerTreeLayer(rlayer))
+
+otra manera
+
+path_to_tif = "C:\PASIG-II\mde\OUTPUT.tif"
+rlayer= QgsRasterLayer(path_to_tif, "SRTM DEM")
+if not rlayer.isValid():
+    print("Layer failed to load")
+
+imprimir extremos coodenadas:
+ext = rlayer.extent()
+print(ext)
+
+obtener coordenada minima:
+ymin = ext.yMinimum
+print(ymin)
+<built-in method yMinimum of QgsRectangle object at 0x00000190FB856430>
+
+Ancho y alto:
+Ancho = rlayer.width()
+print(Ancho)
+Alto = rlayer.height()
+print(Alto)
+
+Tamaño de pixel:
+pixelSizeX=rlayer.rasterUnitsPerPixelX()
+print(pixelSizeX)
+
+Numero de bandas para imagen satelital:
+rlayer.bandCount()
+
+
+Propiedades de la imagen
+sobre textEdit
